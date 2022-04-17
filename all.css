@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap');
+body{
+padding: 0;
+margin: 0;
+scroll-behavior: smooth;
+
+
+}
+html {
+  scroll-behavior: smooth;
+}
+#hero video {
+
+    background-position: absolute;
+    height: 100%;
+width: 100%;
+z-index: 10;
+object-fit:cover;
+
+}
+
+#hero .content
+{
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    z-index:20;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#hero .content h1
+{
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper{
+  display: flex;
+}
+.wrapper .static-txt{
+  color: #fff;
+  font-size: 60px;
+  font-weight: 400;
+}
+.wrapper .dynamic-txts{
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dynamic-txts li{
+  list-style: none;
+  color: #FC6D6D;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+.dynamic-txts li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background:#FC6D6D;
+  border-left: 2px solid #FC6D6D;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
+.header
+{
+  position: fixed;
+  top: 20px;
+  right: 0;
+height: 100px;  
+}
+.button
+{
+height: 50px;
+width: 100px;
+color: #fff;
+background-color: transparent;
+text-decoration: none;
+font-size: x-large;
+border: 0ch;
+font-family: Arial, Helvetica, sans-serif;
+}
+.logo
+{
+padding-top: 20px;
+  padding-left: 30px;
+  list-style: none;
+  color: #fff;
+position: fixed;
+font-family: Arial, Helvetica, sans-serif;
+font-size: x-large;
+height: 100px;
+
+}
+#general-about{
+
+width: 100%;
+height: 100%;
+background-color:#27292c;
+
+}
+#jpg{
+  object-fit:cover;
+  border-radius: 20px;
+  margin: 160px ;
+position: absolute;
+}
+
+#txt{
+  position: relative;
+  font-size: larger;
+  margin-right: 200px;
+  margin-top: 200px;
+  color: #fff;
+  float: right;
+}
+#twitter-icon
+{
+  position: fixed;
+
+  border-top: 100px;
+  float: right;
+  left:0; bottom:0;
+}
+#linkedin-logo{
+  position: fixed;
+
+ left:200; bottom:0;
+
+}
+#github-logo{
+position: fixed;
+   left:100; bottom:0;
+
+
+  }
+  .arrow{
+    padding-top: 350px;
+    position: absolute;
+    bottom: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.arrow span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #e9e9e9;
+    border-right: 5px solid #e9e9e9;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
