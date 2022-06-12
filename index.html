@@ -8,26 +8,7 @@
 
     <link rel="stylesheet" href="all.css">
    
-    <script>
-      var bilgi = 
-     {
-          "dogumtarihi" :" 25.04.2000",
-          "yas" : "20 yr",
-          "yer" : "malatya",
-          "adress" : "yesilyurt /Malatya",
-          "email" : "aeray2302@gmail.com",
-          "phone" : "555555555",
-          "twitter" :"@eray_akg",
-          "frellance" :"avaible"
-     }
-
-var jsonVeri=JSON.stringify(bilgi);
-var veri=JSON.parse(jsonVeri);
-window.alert(veri.yas);
-document.getElementById("#svs1").innerHTML=veri.yas;
-
-
-    </script>
+    
 </head>
 <body>
   <nav  style="z-index: 30;" class="navbar navbar-expand-lg  navbar-dark bg-dark">
@@ -126,30 +107,30 @@ document.getElementById("#svs1").innerHTML=veri.yas;
                     <div class="row about-list">
                         <div class="col-md-6">
                             <div class="media" >
-                                <label>Birthday</label>
-                                <p  id="svs1" ></p>
+                                <label  >Birthday</label>
+                                <p id="svs12"  >eray_akg</p>
                             </div>
                             <div class="media">
                                 <label>Age</label>
-                                <p>20 Yr</p>
+                                <p id="svs123" >20 Yr</p>
                             </div>
                             <div class="media">
                                 <label>Residence</label>
-                                <p>Malatya</p>
+                                <p id="svs1234"   >Malatya</p>
                             </div>
                             <div class="media">
                                 <label>Address</label>
-                                <p>Malatya, TR</p>
+                                <p  id="adress"  >Malatya, TR</p>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="media">
                                 <label>E-mail</label>
-                                <p>aeray2302@gmail.com</p>
+                                <p  id="email"  >aeray2302@gmail.com</p>
                             </div>
                             <div class="media">
                                 <label>Phone</label>
-                                <p>555-555-5555</p>
+                                <p  id="phone"  >555-555-5555</p>
                             </div>
                             <div class="media">
                                 <label>Twitter</label>
@@ -157,7 +138,7 @@ document.getElementById("#svs1").innerHTML=veri.yas;
                             </div>
                             <div class="media">
                                 <label>Freelance</label>
-                                <p>Available</p>
+                                <p id="frellance" >Available</p>
                                 <a class="btn btn-dark"  href="cv788936714.pdf"download> cv yükle</a>
                             </div>
                         </div>
@@ -183,7 +164,6 @@ document.getElementById("#svs1").innerHTML=veri.yas;
     
     <div class="contact-wrapper">
     
-    <!-- Left contact page --> 
       
       <form id="contact-form" class="form-horizontal" role="form">
          
@@ -210,7 +190,6 @@ document.getElementById("#svs1").innerHTML=veri.yas;
         
       </form>
       
-    <!-- Left contact page --> 
       
         <div class="direct-contact-container">
   
@@ -231,7 +210,30 @@ document.getElementById("#svs1").innerHTML=veri.yas;
     
   </section>  
     
-    
+  <script>
+    var bilgi = 
+   {
+        "dogumtarihi" :" 25.04.2000",
+        "yas" : "20 yr",
+        "yer" : "malatya",
+        "adress" : "yesilyurt /Malatya",
+        "email" : "aeray2302@gmail.com",
+        "phone" : "555555555",
+        "twitter" :"@eray_akg",
+        "frellance" :"avaible"
+   }
+
+var jsonVeri=JSON.stringify(bilgi);
+var veri=JSON.parse(jsonVeri);
+document.getElementById("svs12").innerHTML=veri.dogumtarihi;
+document.getElementById("svs123").innerHTML=veri.yas;
+document.getElementById("svs1234").innerHTML=veri.yer;
+document.getElementById("adress").innerHTML=veri.adress;
+document.getElementById("email").innerHTML=veri.email;
+document.getElementById("phone").innerHTML=veri.phone;
+document.getElementById("freelance").innerHTML=veri.frellance;
+</script>
+   
 
 
 </body>
